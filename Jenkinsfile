@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     environment {
         // 主仓名
         mainRepoName = "lkmodel"
@@ -8,7 +8,7 @@ pipeline {
         currentRepoName = "${GIT_URL.substring(GIT_URL.lastIndexOf('/')+1, GIT_URL.length()-4)}"
         NODE_BASE_NAME = "ui-node-${GIT_COMMIT.substring(0, 6)}"
         JENKINS_URL = "http://49.51.192.19:9095"
-        JOB_PATH = "job/github_test_lkmodel"
+        JOB_PATH = "job/github_test_lkmodel_new"
         REPORT_PATH = "allure"
         GITHUB_URL_PREFIX = "https://github.com/lkmodel/"
         GITHUB_URL_SUFFIX = ".git"
